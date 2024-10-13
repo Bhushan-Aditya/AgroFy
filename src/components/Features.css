@@ -1,26 +1,57 @@
-/* Features.css */
-
-.features {
-    padding: 80px 0;
+.features-section {
+    padding: 50px 0;
+    background-image: url('Feature-back.png '); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
-.features .container {
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.features-row {
     display: flex;
     justify-content: space-between;
 }
 
+.features-left,
+.features-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Adds space between the feature items */
+}
+
 .feature {
-    width: 30%;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    margin-bottom: 20px;
+    color: #28a745; /* Icon color */
 }
 
 .feature-title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .feature-description {
     font-size: 16px;
-    line-height: 1.6;
+    color: #ddd; /* Light text color */
+}
+
+/* Background styles for more appeal */
+body {
+    background-color: #e9f5f3; /* Light greenish background to complement the website theme */
 }

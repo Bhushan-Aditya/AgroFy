@@ -1,62 +1,88 @@
-/* Hero Section */
 .hero {
-    background-color: #28a745;
+    background-color: #4CAF50;
     color: #fff;
-    padding: 100px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
     min-height: 100vh;
-}
-
-.hero .container {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.fao-logo {
-    width: 200px;
-    height:200px; /*added height*/
+    flex-direction: column;
+    justify-content: center; /* Changed from space-between to center */
 }
 
 .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 4rem; /* Increased top and bottom padding */
+    margin-bottom: 4rem; /* Added margin to push features down */
+}
+
+.fao-logo, .go-green-image {
+    width: 150px;
+    height: 150px;
+}
+
+.hero-text {
     text-align: center;
-    flex-grow: 1;
+    max-width: 600px;
 }
 
 .hero-title {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-    font-size: 20px;
-    margin-bottom: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .learn-more-button {
-    background-color: #007bff;
+    background-color: #2196F3;
     color: #fff;
     border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 18px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
     cursor: pointer;
+    border-radius: 4px;
 }
 
-.go-green-image {
-    width: 250px;
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+    background-color: #ffffff;
+    color: #ffffff;
 }
 
-.footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
+.feature {
     text-align: center;
-    width: 100%;
-    position: relative;
-    bottom: 0;
+    max-width: 300px;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 2rem;
+    }
 }
